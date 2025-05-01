@@ -1,0 +1,18 @@
+:root{
+    font-family: sans-serif;
+}
+.icon, .center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    background: #eee;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
