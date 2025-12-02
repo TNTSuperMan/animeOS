@@ -13,7 +13,7 @@ const apps = ref<symbol[]>([]);
 <template>
     <div class="windows">
         <icon @click="apps = [...apps, Symbol()]"/>
-        <app v-for="_ in apps" @close="apps.splice(apps.indexOf(_))"/>
+        <app v-for="_ in apps" @close="apps.splice(apps.indexOf(_), 1)"/>
     </div>
 </template>
 <style scoped>
